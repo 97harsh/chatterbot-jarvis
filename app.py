@@ -25,13 +25,9 @@ chatbot = ChatBot('JARVIS',
                                    'maximum_similarity_threshold': 0.90
                                    }
                   ])  # create chatbot
-# chatbot.set_trainer(ChatterBotCorpusTrainer)
+
 trainer = ChatterBotCorpusTrainer(chatbot)
 trainer.train('chatterbot.corpus.english')
-# dir = os.path.join('/home/$USER/anaconda3/envs/chatbot/lib',
-#    'python3.6/site-packages/chatterbot_corpus/data/english')
-# assert os.path.exists(dir), f"path not found {dir}"
-# trainer.train(dir)
 
 
 @app.route("/")
