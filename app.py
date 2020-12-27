@@ -7,12 +7,14 @@ except Exception:
     from spacy.cli import download
     download("en")
 
+import os
 
 from chatterbot import ChatBot
 from chatterbot.trainers import ChatterBotCorpusTrainer
 from flask import Flask, render_template, request
 
 app = Flask(__name__, template_folder="templates")
+app.config.from_object(os.environ['APP_SETTINGS'])
 chatbot = ChatBot('JARVIS',
                   storage_adapter='chatterbot.storage.SQLStorageAdapter',
                   logic_adapters=[
