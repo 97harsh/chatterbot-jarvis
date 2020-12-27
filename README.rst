@@ -10,9 +10,9 @@ To download this code and install in development mode, do the following:
 .. code-block::
 
     $ git clone https://github.com/97harsh/chatterbot-jarvis.git
-    $ cd chatbot-jarvis
-    $ pip install .
+    $ cd chatterbot-jarvis
+    $ python setup.py
     $ python app.py
 
-
+After running
 
