@@ -20,7 +20,7 @@ app = Flask(__name__, template_folder="templates")
 app.config.from_object(os.environ['APP_SETTINGS'])
 print(os.environ['APP_SETTINGS'])
 chatbot = ChatBot('JARVIS',
-                  storage_adapter='chatterbot.storage.SQLStorageAdapter',
+                  #   storage_adapter='chatterbot.storage.SQLStorageAdapter',
                   logic_adapters=[
                                   'chatterbot.logic.MathematicalEvaluation',
                                   'chatterbot.logic.TimeLogicAdapter',
