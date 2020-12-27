@@ -15,7 +15,7 @@ To download this code and install the dependency,and run the app, do the followi
 
 To run the flask app
 
-..code-block::
+.. code-block::
 
     $ python app.py
 
@@ -23,7 +23,7 @@ This launches chatbot at http://127.0.0.1:5000
 
 To Uninstall anytime run:
 
-..code-block::
+.. code-block::
 
     $ pip uninstall flask_chatterbot
 
