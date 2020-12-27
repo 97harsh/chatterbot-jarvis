@@ -4,7 +4,7 @@ chatterbot based chatbot
 
 Installation
 ------------
-To download this code and install in development mode, do the following:
+To download this code and install the dependency,and run the app, do the following:
 
 
 .. code-block::
@@ -12,7 +12,18 @@ To download this code and install in development mode, do the following:
     $ git clone https://github.com/97harsh/chatterbot-jarvis.git
     $ cd chatterbot-jarvis
     $ pip install .
+
+To run the flask app
+
+..code-block::
+
     $ python app.py
 
-This launches chatbot at http://127.0.0.1:5000 
+This launches chatbot at http://127.0.0.1:5000
+
+To Uninstall anytime run:
+
+..code-block::
+
+    $ pip uninstall flask_chatterbot
 
