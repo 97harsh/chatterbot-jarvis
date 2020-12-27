@@ -3,7 +3,7 @@
 import spacy
 try:
     nlp = spacy.load("en")
-except OSError:
+except Exception:
     from spacy.cli import download
     download("en")
 
