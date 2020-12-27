@@ -39,3 +39,7 @@ To uninstall anytime, run:
 .. code-block::
 
     $ pip uninstall flask_chatterbot
+
+
+The App is ready to be launched to HEROKU, follow the instructions here is you plan on publishing to HEROKU
+https://realpython.com/flask-by-example-part-1-project-setup/#heroku-setup
