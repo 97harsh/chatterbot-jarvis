@@ -9,7 +9,10 @@ To download this code and install in development mode, do the following:
 
 .. code-block::
 
-    $ git clone https://github.com/CoronaWhy/drug-lit-contradictory-claims.git
-    $ cd drug-lit-contradictory-claims
-    $ pip install -e .
+    $ git clone https://github.com/97harsh/chatterbot-jarvis.git
+    $ cd chatbot-jarvis
+    $ pip install .
+    $ python app.py
+
+
 
