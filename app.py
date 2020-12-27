@@ -1,9 +1,16 @@
 """Main App used for chatbot."""
 
+import spacy
+try:
+    nlp = spacy.load("en")
+except OSError:
+    from spacy.cli import download
+    download("en")
+
+
 from chatterbot import ChatBot
 from chatterbot.trainers import ChatterBotCorpusTrainer
 from flask import Flask, render_template, request
-
 
 app = Flask(__name__, template_folder="templates")
 chatbot = ChatBot('JARVIS',

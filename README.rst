@@ -14,5 +14,5 @@ To download this code and install in development mode, do the following:
     $ pip install .
     $ python app.py
 
-This launches chatbot at http://127.0.01:5000 
+This launches chatbot at http://127.0.0.1:5000 
 
