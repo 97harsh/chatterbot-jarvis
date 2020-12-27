@@ -8,11 +8,14 @@ except Exception:
     download("en")
 
 import os
+import logging
 
 from chatterbot import ChatBot
 from chatterbot.trainers import ChatterBotCorpusTrainer
 from flask import Flask, render_template, request
 
+
+logging.basicConfig(level=os.environ.get("LOGLEVEL", "INFO"))
 app = Flask(__name__, template_folder="templates")
 app.config.from_object(os.environ['APP_SETTINGS'])
 print(os.environ['APP_SETTINGS'])
