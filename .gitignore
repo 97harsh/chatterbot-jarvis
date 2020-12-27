@@ -4,6 +4,7 @@ db.sqlite3
 database.sqlite3
 db.sqlite3-shm
 db.sqlite3-wal
+__pycache__
 # HEROKU files
 # config.py
 # .env
